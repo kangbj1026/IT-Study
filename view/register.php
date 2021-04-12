@@ -24,7 +24,7 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 	$mb['mb_email'] = $mb['space'];
 	$mb['mb_job'] = $mb['space'];
 	$mb['mb_gender'] = $mb['space'];
-	$mb['mb_language'] =$mb['space'];
+	$mb['mb_language'] = $mb['space'];
 }
 ?>
 <!DOCTYPE html>
@@ -94,8 +94,9 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 							<span>
 								<label><input type="checkbox" name="mb_language[]" value="HTML" <?php echo strpos($mb['mb_language'], 'HTML') !== false ? 'checked' : '' ?>> HTML </label>
 								<label><input type="checkbox" name="mb_language[]" value="CSS" <?php echo strpos($mb['mb_language'], 'CSS') !== false ? 'checked' : '' ?>> CSS </label> <br>
-								<label><input type="checkbox" name="mb_language[]" value="PHP" <?php echo strpos($mb['mb_language'], 'PHP') !== false ? 'checked' : '' ?>> PHP </label>
+								<label><input type="checkbox" name="mb_language[]" value="PHP" <?php echo strpos($mb['mb_language'], 'PHP') !== false ? 'checked' : '' ?>> PHP </label>						
 								<label><input type="checkbox" name="mb_language[]" value="MySQL" <?php echo strpos($mb['mb_language'], 'MySQL') !== false ? 'checked' : '' ?>> MySQL </label>
+								<label><input type="hidden" name="mb_language[]" value=""> </label>
 							</span>
 						</div>
 						<div class="btn_wrap">
@@ -107,8 +108,8 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 		</div>
 	</div>
 	<script>
+	
 		function fregisterform_submit(f) { // submit 최종 폼체크
-
 			if (f.mb_id.value.length < 1) { // 회원아이디 검사
 				alert("아이디를 입력하십시오.");
 				f.mb_id.focus();
@@ -152,25 +153,19 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 				if (f.mb_email.value.match(regExp) == null) {
 					alert('이메일 주소가 형식에 맞지 않습니다.');
 					f.mb_email.focus();
-					return false;1111
+					return false;
 				}
 			}
 
-			alert($mb['mb_gender']);
-			alert(f.mb_gender.value)
-			;
-			if (f.mb_gender.value < 1) { // 성별 검사
+			if (f.mb_gender.value == "") { // 성별 검사
 				alert("성별을 선택하시지 않았습니다.");
-				f.mb_gender.focus();
-				return false;
-			}
-			alert(f.mb_language.value.length);
-			if (f.mb_language.value.length < 1) { // 관심언어 검사
-				alert("관심언어를 선택하시지 않았습니다.");
-				f.mb_language.focus();
 				return false;
 			}
 
+			if (f.mb_job.value == "") { // 직업 검사
+				alert("직업을 선택하시지 않았습니다.");
+				return false;
+			}
 			return true;
 		}
 	</script>

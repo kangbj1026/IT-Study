@@ -19,7 +19,6 @@ switch ($mode) {
 		$title = "회원수정";
         break;
 }
-
 $mb_password			= trim($_POST['mb_password']); // 첫번째 입력 패스워드
 $mb_password_re			= trim($_POST['mb_password_re']); // 두번째 입력 패스워드
 $mb_name				= trim($_POST['mb_name']); // 이름
@@ -27,7 +26,7 @@ $mb_email				= trim($_POST['mb_email']); // 이메일
 $mb_gender				= $_POST['mb_gender']; // 성별
 $mb_job					= $_POST['mb_job']; // 직업
 $mb_ip					= $_SERVER['REMOTE_ADDR']; // 접속 아이피
-$mb_language			= implode(",", $_POST['mb_language']); // 관심언어 (,) 구분으로 저장
+$mb_language			= implode(',', $_POST['mb_language']); // 관심언어 (,) 구분으로 저장
 $mb_datetime			= date('Y-m-d H:i:s', time()); // 가입일
 $mb_modify_datetime	= date('Y-m-d H:i:s', time()); // 수정일
 
@@ -67,8 +66,8 @@ if (!$mb_gender) {
 	exit;
 }
 
-if (!$mb_language) {
-	echo "<script>alert('관심언어가 넘어오지 않았습니다.');</script>";
+if (!$mb_job) {
+	echo "<script>alert('직업이 넘어오지 않았습니다.');</script>";
 	echo "<script>location.replace('../view/register.php');</script>";
 	exit;
 }
