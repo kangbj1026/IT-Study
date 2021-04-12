@@ -1,3 +1,5 @@
+-- create database project;
+create database project;
 -- create table member
 create table member (
 	mb_no int(11) not null AUTO_INCREMENT,
