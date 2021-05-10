@@ -11,6 +11,13 @@
 	$query1 = mysqli_query($conn, $sql1);
 	$sql2 = "UPDATE member SET mb_no = @COUNT:=@COUNT+1";
 	$quert2 = mysqli_query($conn, $sql2);
+
+	$sql0 = "ALTER TABLE board AUTO_INCREMENT=1";
+	$query = mysqli_query($conn, $sql0);
+	$sql01 = "SET @COUNT = 0";
+	$query01 = mysqli_query($conn, $sql01);
+	$sql02 = "UPDATE board SET board_no = @COUNT:=@COUNT+1";
+	$quert02 = mysqli_query($conn, $sql02);
 	if (!$conn) {
 		die("연결 실패 : " . mysqli_connect_errno());
 	}

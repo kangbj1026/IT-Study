@@ -4,11 +4,26 @@
 	box-sizing: border-box;
 	font-family: 'Alata', sans-serif;
 }
+#main {
+	display: flow-root;
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+}
+#main a {
+	text-decoration:none;
+	font-size: 2rem;
+}
+#main .main {
+	float: left;
+}
+#main .login {
+	float: right;
+}
 
 .page_container {
 	width: 100vw;
 	height: 100vh;
-	background: #eff0f2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -114,7 +129,7 @@
 }
 .memo_input_container {
 	text-align: center;
-    padding: 5%;
+	padding: 5%;
 }
 .memo_input_container ul li,.memo_input_container .btn_wrap button,.memo_input_container .btn_wrap .button, .memo_input_container .btn_wrap a {
 	width: 30%;
@@ -123,14 +138,14 @@
 	background: white;
 	border-radius: 5px;
 	margin: 5px;
-    padding: 5px;
+	padding: 5px;
 	display: inline-block;
 	text-align: center;
 }
 .check_btn {
 	text-decoration: none;
-    background: none;
-    width: 60%;
+	background: none;
+	width: 60%;
 }
 .memo_input_container ul li a {
 	text-decoration: none;
@@ -183,4 +198,87 @@
 .pg_wrap .pg .pg_current, .pg_wrap .pg a {
 	margin: 10px;
 	text-decoration: none;
+}
+
+.community {
+	width: 80%;
+	border-radius: 15px;
+	padding: 30px;
+	background-image: radial-gradient(ellipse farthest-corner at 0 140%, #5d9dff 0%, #2178ff 70%, #3585ff 70%);
+}
+.community_lists {
+	border-radius: 15px;
+	padding:20px;
+	background: linear-gradient(287deg, rgba(255,255,255,1) 0%, rgba(243,244,244,1) 0%, rgba(255,255,255,1) 100%);
+}
+.community_table {
+	margin: auto;
+}
+.community_table thead th {
+	width: 1%;
+	border-bottom: 2px solid red;
+}
+.community_table tbody th {
+	padding: 5px;
+	width: 1%;
+	border-bottom: 1px solid rosybrown;
+}
+
+.write_btn{
+	display: block;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 5px;
+	width: 5%;
+	margin: 10px;
+	background: #ffffff;
+}
+.reload_btn, .submit_btn, .back_btn, .delete_btn, .modify_btn{
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 5px;
+	width: 8%;
+	margin: 10px;
+	background: #ffffff;
+}
+.board_no {
+	font-size: 1.2rem;
+	cursor: pointer;
+	background: #ffffff;
+	border: none;
+}
+.board_no:hover {
+	background-color: #a3eaae
+}
+
+.write {
+	width: 80%;
+	border-radius: 15px;
+	padding: 30px;
+	background-image: radial-gradient(ellipse farthest-corner at 0 140%, #5d9dff 0%, #2178ff 70%, #3585ff 70%);
+}
+.write_form {
+	border-radius: 15px;
+	padding:20px;
+	background: linear-gradient(287deg, rgba(255,255,255,1) 0%, rgba(243,244,244,1) 0%, rgba(255,255,255,1) 100%);
+}
+.write_table {
+	margin: auto;
+}
+.write_table thead th {
+	width: 1%;
+	border-bottom: 2px solid red;
+}
+.write_table tbody th {
+	padding: 5px;
+	width: 1%;
+	border-bottom: 1px solid rosybrown;
+}
+.write_table tbody th .subject {
+	width: 70%;
+	height: 50px;
+}
+.write_table tbody th .contents {
+	width: 100%;
+	height: 200px;
 }

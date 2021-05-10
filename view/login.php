@@ -11,6 +11,10 @@ include("../lib/dbconn.php");  // DB연결을 위한 같은 경로의 dbconn.php
 	<title> Login </title>
 </head>
 <body>
+<div id="main">
+<a href="../view/main.php" class="main"> main </a>
+<a href="../view/login.php" class="login"> login </a>
+</div>
 	<div class="page_container">
 		<div class="login_form">
 			<?php if (!isset($_SESSION['ss_mb_id'])) { // 로그인 세션이 있을 경우 로그인 화면 
