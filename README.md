@@ -1,5 +1,5 @@
 # myStudy
-PHP , mySQL 개발 및 코드 정리
+PHP , mySQL 개발 및 코드 정리 <br>
 게시판(CRUD), 회원가입(join), 회원정보(member_info), 회원로그인(login), 회원수정(modify) 등의 작업 완료
 
 # LOGIN PAGE
