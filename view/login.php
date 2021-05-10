@@ -2,7 +2,7 @@
 include("../lib/dbconn.php");  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,29 +13,29 @@ include("../lib/dbconn.php");  // DB연결을 위한 같은 경로의 dbconn.php
 <body>
 	<div class="page_container">
 		<div class="login_form">
+		<a href="../"> Main </a>
 			<?php if (!isset($_SESSION['ss_mb_id'])) { // 로그인 세션이 있을 경우 로그인 화면 
 			?>
-				<div class="login_form_inside">
-					<h1> LOGIN </h1>
-					<div class="login_input_container">
+			<div class="login_form_inside">
+				<h1> LOGIN </h1>
+				<div class="login_input_container">
+					<form action="../lib/login_check.php" method="post">
+						<div class="login_input_wrap">
+							<span> ID </span>
+							<input type="text" name="mb_id">
+						</div>
+						<div class="login_input_wrap">
+							<span> PW </span>
+							<input type="password" name="mb_password">
+						</div>
 
-						<form action="../lib/login_check.php" method="post">
-							<div class="login_input_wrap">
-								<span> ID </span>
-								<input type="text" name="mb_id">
-							</div>
-							<div class="login_input_wrap">
-								<span> PW </span>
-								<input type="password" name="mb_password">
-							</div>
-
-							<div class="btn_wrap">
-								<input class="btn_click" type="submit" value="로그인">
-								<a href="./register.php">회원가입</a>
-							</div>
-						</form>
-					</div>
+						<div class="btn_wrap">
+							<input class="btn_click" type="submit" value="로그인">
+							<a href="./register.php">회원가입</a>
+						</div>
+					</form>
 				</div>
+			</div>
 		</div>
 	</div>
 

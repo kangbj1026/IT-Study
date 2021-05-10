@@ -28,7 +28,7 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 	<meta charset="UTF-8">
