@@ -36,7 +36,10 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
 	<title> Register </title>
 </head>
-
+<div id="main">
+<a href="../view/main.php" class="main"> main </a>
+<a href="../view/login.php" class="login"> login </a>
+</div>
 <body>
 	<div class="page_container">
 		<div class="member_form">
