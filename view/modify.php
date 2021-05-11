@@ -18,11 +18,11 @@ $result = mysqli_query($conn, $sql);
 <a href="../view/login.php" class="login"> login </a>
 </div>
 <div class="page_container">
-		<div class="write">
-			<div class="write_form">
+		<div class="modify">
+			<div class="modify_form">
 			<form action="../lib/board_update.php" method="POST">
 			<h1> Modify </h1>
-				<table class="write_table">
+				<table class="modify_table">
 					<thead>
 						<tr>
 							<th> 제목 </th>

@@ -24,7 +24,7 @@
 						<tr>
 							<th> 번호 </th>
 							<th> 제목 </th>
-							<th> 내용 </th>
+							<!-- <th> 내용 </th> -->
 							<th> ID </th>
 							<th> 날짜 </th>
 						</tr>
@@ -39,7 +39,7 @@
 						<tr>
 							<th><?php echo $mb['board_no'] ?></th>
 							<th> <button class="board_no" type="submit" name="board_no" value="<?php echo $mb['board_no'] ?>"><?php echo $mb['subject'] ?></button></th>
-							<th> <?php echo $mb['contents'] ?> </th>
+							<!-- <th> <?php echo $mb['contents'] ?> </th> -->
 							<th> <?php echo $mb['member_id'] ?> </th>
 							<th> <?php echo $mb['reg_date'] ?> </th>
 						</tr>
@@ -48,7 +48,7 @@
 				</table>
 			</form>
 			</div>
-			<a href="../view/write.php" class="write_btn"> 글쓰기 </a>
+			<button type="submit" class="write_btn"><a href="../view/write.php"> 글쓰기 </a></button>
 		</div>
 	</div>
 </body>
