@@ -10,13 +10,14 @@ $result = mysqli_query($conn, $sql);
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<script src="../jquery/jquery-3.6.0.js"></script>
 	<title> read </title>
-	<script>
+	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".delete_btn").click(function(){
-				
+				alert('삭제 중입니다.');
 			});
-		})
+		});
 	</script>
 </head>
 <body>
