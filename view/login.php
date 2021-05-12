@@ -12,7 +12,7 @@ include("../lib/dbconn.php");  // DB연결을 위한 같은 경로의 dbconn.php
 </head>
 <body>
 <div id="main">
-<a href="../view/main.php" class="main"> main </a>
+<a href="../community/main.php" class="main"> main </a>
 <a href="../view/login.php" class="login"> login </a>
 </div>
 	<div class="page_container">

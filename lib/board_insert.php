@@ -16,11 +16,11 @@ if ($_POST['mode']) {
 	$result = mysqli_query($conn, $sql);
 	
 	if ($result) {
-		echo "<script>alert('입력성공!');window.location.href = 'http://localhost/myStudy/view/main.php';</script>";
+		echo "<script>alert('입력성공!');window.location.href = 'http://localhost/myStudy/community/main.php';</script>";
 		mysqli_close($conn);
 		exit;
 	} else {
-		echo "<script>alert('입력살패!!');window.location.href = 'http://localhost/myStudy/view/write.php';</script>";
+		echo "<script>alert('입력살패!!');window.location.href = 'http://localhost/myStudy/community/write.php';</script>";
 		exit;
 	}
 }

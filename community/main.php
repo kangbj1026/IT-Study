@@ -11,14 +11,14 @@
 </head>
 <body>
 <div id="main">
-<a href="../view/main.php" class="main"> main </a>
+<a href="../community/main.php" class="main"> main </a>
 <a href="../view/login.php" class="login"> login </a>
 </div>
 <div class="page_container">
 		<div class="community">
 			<div class="community_lists">
 			<h1> Community </h1>
-			<form action="../view/read.php" method="GET">
+			<form action="../community/read.php" method="GET">
 				<table class="community_table">
 					<thead>
 						<tr>
@@ -48,7 +48,7 @@
 				</table>
 			</form>
 			</div>
-			<button type="submit" class="write_btn"><a href="../view/write.php"> 글쓰기 </a></button>
+			<button type="submit" class="write_btn"><a href="../community/write.php"> 글쓰기 </a></button>
 		</div>
 	</div>
 </body>

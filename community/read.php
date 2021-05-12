@@ -8,7 +8,7 @@ $result = mysqli_query($conn, $sql);
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="vieport" content="width=device-width, initial-scale=1.0">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
 	<script src="../jquery/jquery-3.6.0.js"></script>
 	<title> read </title>
@@ -22,13 +22,13 @@ $result = mysqli_query($conn, $sql);
 </head>
 <body>
 <div id="main">
-<a href="../view/main.php" class="main"> main </a>
+<a href="../community/main.php" class="main"> main </a>
 <a href="../view/login.php" class="login"> login </a>
 </div>
 <div class="page_container">
 		<div class="read">
 			<div class="read_form">
-			<form action="../view/modify.php" method="GET">
+			<form action="../community/modify.php" method="GET">
 			<h1> Read </h1>
 				<table class="read_table">
 					<thead>

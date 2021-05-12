@@ -32,12 +32,12 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 <head>	
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="vieport" content="width=device-width, initial-scale=1.0">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
 	<title> Register </title>
 </head>
 <div id="main">
-<a href="../view/main.php" class="main"> main </a>
+<a href="../community/main.php" class="main"> main </a>
 <a href="../view/login.php" class="login"> login </a>
 </div>
 <body>

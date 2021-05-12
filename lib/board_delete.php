@@ -10,7 +10,7 @@ $sql = " DELETE FROM board
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
-	$url = '../view/main.php';
+	$url = '../community/main.php';
 	echo "<script>alert('삭제 완료 되었습니다.');location.replace('$url');</script>";
 	exit;
 } else {

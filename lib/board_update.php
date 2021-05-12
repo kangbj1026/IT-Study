@@ -14,10 +14,10 @@ if ($_POST) {
 	$result = mysqli_query($conn, $sql);
 
 	if ($result) {
-		echo "<script>alert('수정 성공!');location.replace('../view/read.php?board_no=$board_no');</script>";
+		echo "<script>alert('수정 성공!');location.replace('../community/read.php?board_no=$board_no');</script>";
 		exit;
 	} else {
-		echo "<script>alert('수정 실패!!');window.location.href = 'http://localhost/myStudy/view/modify.php?board_no=$board_no';</script>";
+		echo "<script>alert('수정 실패!!');window.location.href = 'http://localhost/myStudy/community/modify.php?board_no=$board_no';</script>";
 		exit;
 	}
 }
