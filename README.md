@@ -1,5 +1,5 @@
 # myStudy
-PHP 언어, Mysql, Jquery 를 활용한 login, community page <br>
+PHP 언어, Mysql, Jquery, OOP 를 활용한 login, community page <br>
 게시판(CRUD), 회원가입(join), 회원정보(member_info), 회원로그인(login), 회원수정(modify) 등의 작업 완료
 
 # LOGIN PAGE
