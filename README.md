@@ -10,3 +10,21 @@ PHP 언어, Mysql, Jquery, OOP 를 활용한 login, community page <br>
 
 # MODIFY PAGE
 ![modify](https://user-images.githubusercontent.com/51243212/117683763-5964a400-b1ef-11eb-8a9e-f50a3b171f0a.jpg)
+
+# COMMUNITY PAGE
+![community](https://user-images.githubusercontent.com/51243212/118069917-fc7c1000-b3df-11eb-8c0f-c3a82d2147af.jpg)
+
+# WRITE PAGE
+![write](https://user-images.githubusercontent.com/51243212/118069910-fb4ae300-b3df-11eb-90b7-f42caaa24ca1.jpg)
+
+# READ PAGE
+![read](https://user-images.githubusercontent.com/51243212/118069930-fe45d380-b3df-11eb-9cea-24145fc96802.jpg)
+
+# USER_READ PAGE
+![user_read](https://user-images.githubusercontent.com/51243212/118069931-fede6a00-b3df-11eb-9a3a-ac11430f3ac4.jpg)
+
+# COMMUNITY_MODIFY PAGE
+![community_modify](https://user-images.githubusercontent.com/51243212/118070148-5250b800-b3e0-11eb-892b-ca2404aa2cc1.jpg)
+
+# DELETE PAGE
+![delete](https://user-images.githubusercontent.com/51243212/118069919-fc7c1000-b3df-11eb-97d0-b3f08f30307b.jpg)

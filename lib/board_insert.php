@@ -1,5 +1,5 @@
 <?php
-include("./dbconn.php");
+require_once "./dbconn.php";
 $member_id = $_SESSION['ss_mb_id'];
 $subject = trim($_POST['subject']);
 $contents = trim($_POST['contents']);

@@ -1,5 +1,5 @@
 <?php
-include("./dbconn.php");  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
+require_once "./dbconn.php";  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
 // trim : 문자열의 시작과 끝에는 공백을 제거
 $mb_id			= trim($_POST['mb_id']);
 $mb_password	= trim($_POST['mb_password']);

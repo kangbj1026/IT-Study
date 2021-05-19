@@ -1,4 +1,4 @@
-<?php include("../lib/dbconn.php");  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
+<?php require_once "../lib/dbconn.php";  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -48,7 +48,9 @@
 				</table>
 			</form>
 			</div>
-			<button type="submit" class="write_btn"><a href="../community/write.php"> 글쓰기 </a></button>
+			<?php if (@$_SESSION['ss_mb_id']) { ?>
+				<button type="submit" class="write_btn"><a href="../community/write.php"> 글쓰기 </a></button>
+				<?php } ?>
 		</div>
 	</div>
 </body>

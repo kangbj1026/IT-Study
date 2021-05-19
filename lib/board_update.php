@@ -1,5 +1,5 @@
 <?php
-include("./dbconn.php");
+require_once "./dbconn.php";
 $board_no = trim($_POST['board_no']);
 $subject = trim($_POST['subject']);
 $contents = trim($_POST['contents']);

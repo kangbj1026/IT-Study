@@ -1,4 +1,4 @@
-<?php include("../lib/dbconn.php");  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
+<?php require_once "../lib/dbconn.php";  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
 ?>
 <!DOCTYPE html>
 <html lang="ko">
