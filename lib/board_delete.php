@@ -1,5 +1,5 @@
 <?php
-require_once "./dbconn.php";
+require_once "dbconn.php";
 $board_no = trim($_GET['board_no']);
 $member_id = $_SESSION['ss_mb_id'];
 

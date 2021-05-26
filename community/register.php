@@ -38,7 +38,12 @@ if (isset($_SESSION['ss_mb_id']) && $_GET['mode'] == 'modify') { // 세션이 �
 </head>
 <div id="main">
 <a href="../community/main.php" class="main"> main </a>
+<?php 
+if (@$_SESSION['ss_mb_id']) { ?>
+<a href="../view/login.php" class="login"> <?php echo $_SESSION['ss_mb_id'] ?> 회원님 </a>	
+<?php } else {?>
 <a href="../view/login.php" class="login"> login </a>
+<?php }?>
 </div>
 <body>
 	<div class="page_container">

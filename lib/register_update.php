@@ -1,5 +1,5 @@
 <?php
-require_once "./dbconn.php";  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
+require_once "dbconn.php";  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
 
 $mode = $_POST['mode'];
 
